@@ -16,8 +16,8 @@ with open('parklandShooting.csv') as csv_file:
     		# row[4] is the actual tweet
     		word_tokens = word_tokenize(row[4])
     		filtered_sentence = [w for w in word_tokens if not w in stop_words]
-    		filtered_sentence = [w for w in filtered_sentence if "/" not in w ]
-    		filtered_sentence = [w for w in filtered_sentence if "\\" not in w ]
+    		filtered_sentence = [w for w in filtered_sentence if not"/"  in w ]
+    		filtered_sentence = [w for w in filtered_sentence if not "\\"  in w ]
     		print(filtered_sentence)
     		print("-----------")
     	except:
