@@ -5,13 +5,13 @@ This is the project goal.
 
 ## Data Collection
 #### Source
-... We are scraping Tweets of off Twitter. 
+...We are scraping Tweets of off Twitter. 
 #### Tools
-... We are using Python to do the work. (data collection, processing, model training, and classification)
-... We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
-... We are using [NLTK](https://www.nltk.org/) to scrub the Tweets
+...We are using Python to do the work. (data collection, processing, model training, and classification)
+...We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
+...We are using [NLTK](https://www.nltk.org/) to scrub the Tweets
 #### Methodology
-... Our scripts get Tweets made about each event within a week of the event happening.
+...Our scripts get Tweets made about each event within a week of the event happening.
 
 ### Events Being Analyzed
 1. July 20, 2012 - Aurora theater shooting
