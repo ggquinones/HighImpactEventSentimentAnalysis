@@ -12,6 +12,12 @@ This is the project goal.
 - We are using [NLTK](https://www.nltk.org/) to scrub the Tweets
 #### Methodology
 - Our scripts get Tweets made about each event within a week of the event happening.
+- All tweets are scrubbed of extraneous information such as:
+..* URLS
+..* Punctuation
+..* [Stop Words](https://gist.github.com/sebleier/554280)
+..* Emojis
+- Tweets are then tokenized and stored in csv files
 
 ### Events Being Analyzed
 1. July 20, 2012 - Aurora theater shooting
