@@ -3,9 +3,15 @@
 ## Project Goal
 This is the project goal.
 
+## Project Team
+- Professor Max Fowler
+- Gabriel Quinones
+- Akshaya Prasad
+- Isaiah Fisher
+
 ## Data Collection
 #### Source
-- We are scraping Tweets of off Twitter. 
+- We are scraping Tweets relating to [high impact events](#Events Being Analyzed) from Twitter.
 #### Tools
 - We are using Python to do the work. (data collection, processing, model training, and classification)
 - We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
@@ -15,8 +21,10 @@ This is the project goal.
 - All tweets are scrubbed of extraneous information such as:
   - URLS
   - Punctuation
+  - Numbers
   - [Stop Words](https://gist.github.com/sebleier/554280)
   - Emojis
+  - [And Others](https://pypi.org/project/tweet-preprocessor/)
 - Tweets are then tokenized and stored in csv files
 
 ### Events Being Analyzed
