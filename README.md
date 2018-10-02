@@ -11,7 +11,7 @@ This is the project goal.
 
 ## Data Collection
 #### Source
-- We are scraping Tweets relating to [high impact events](#Events Being Analyzed) from Twitter.
+- We are scraping Tweets relating to [high impact events](#events-being-analyzed) from Twitter.
 #### Tools
 - We are using Python to do the work. (data collection, processing, model training, and classification)
 - We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
