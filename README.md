@@ -14,6 +14,14 @@ This is the project goal.
 - We are scraping Tweets relating to [high impact events](#events-being-analyzed) from Twitter.
 - Below is a table showing the queries used to collect tweets. (Runs a contains search)
 - Looks for tweets a week after the event
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 |                          Event                          | Query                                                           |
 |:-------------------------------------------------------:|-----------------------------------------------------------------|
 | Aurora theater shooting                                 | "aurora shooting"  "theatre shooting"                           |
