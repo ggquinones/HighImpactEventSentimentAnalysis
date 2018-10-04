@@ -12,10 +12,11 @@ This is the project goal.
 ## Data Collection
 #### Source
 - We are scraping Tweets relating to [high impact events](#events-being-analyzed) from Twitter.
-- Below is a table showing the queries used to collect tweets. (Runs a contains search)
-- Looks for tweets a week after the event
+- We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
+- Below is a table showing the queries used to collect the tweets.
+- Tweets from the day the event occured to a week after are analyzed, and all tweets which contain the search terms are collected.
 
-|                          Event                          | Query                                                           |
+|                          Event                          | Search Terms                                                           |
 |:-------------------------------------------------------|:----------------------------------------------------------------:|
 | Aurora theater shooting                                 | "aurora shooting"  "theatre shooting"                           |
 | Sandy Hook                                              | "sandy hook"                                                    |
@@ -33,20 +34,13 @@ This is the project goal.
 | Copper Canyon Apartment shooting                        | "colorado apartment shooting"  "copper canyon shooting" "colorado shooting" |
 | Stoneman Douglas(Parkland Florida) High School shooting | "parkland shooting"                                             | |Santa Fe High School shooting                           | "santa fe shooting"                                               
 
-#### Tools
-- We are using Python to do the work. (data collection, processing, model training, and classification)
-- We are collecting tweets [using this library](https://github.com/Jefferson-Henrique/GetOldTweets-python)
-- We are using [NLTK](https://www.nltk.org/) to scrub the Tweets
-#### Methodology
-- Our scripts get Tweets made about each event within a week of the event happening.
-- All tweets are scrubbed of extraneous information such as:
-  - URLS
-  - Punctuation
-  - Numbers
-  - [Stop Words](https://gist.github.com/sebleier/554280)
-  - Emojis
-  - [And Others](https://pypi.org/project/tweet-preprocessor/)
-- Tweets are then tokenized and stored in csv files
+### Data Processing
+- Tweets are notoriously noisy data so before they are analyzed they must be pre-processed
+- Fortunately many libraries exist to help with this task.
+- This [preprocessor] library allows us to remove most of the extraneous information from tweets such as URLs, hashtags, and emojis.(https://pypi.org/project/tweet-preprocessor/)
+- [Natural Languaga ToolKit(NLTK)](https://www.nltk.org/) library was used to remove [stop words](https://gist.github.com/sebleier/554280) from the tweets.
+
+### Data Analysis
 
 ### Events Being Analyzed
 1. July 20, 2012 - Aurora theater shooting
