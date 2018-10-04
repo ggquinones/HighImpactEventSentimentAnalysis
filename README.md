@@ -37,8 +37,8 @@ This is the project goal.
 ### Data Processing
 - Tweets are notoriously noisy data so before they are analyzed they must be pre-processed
 - Fortunately many libraries exist to help with this task.
-- This [preprocessor] library allows us to remove most of the extraneous information from tweets such as URLs, hashtags, and emojis.(https://pypi.org/project/tweet-preprocessor/)
-- [Natural Languaga ToolKit(NLTK)](https://www.nltk.org/) library was used to remove [stop words](https://gist.github.com/sebleier/554280) from the tweets.
+- This [preprocessor](https://pypi.org/project/tweet-preprocessor/) library allows us to remove most of the extraneous information from tweets such as URLs, hashtags, and emojis.
+- [Natural Languaga ToolKit (NLTK)](https://www.nltk.org/) library was used to remove [stop words](https://gist.github.com/sebleier/554280) from the tweets.
 
 ### Data Analysis
 
